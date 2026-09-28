@@ -117,11 +117,11 @@
 
 Рассмотрим следующий фрагмент программы.
 
-`bool x = true, y = false;`
-`auto a = x & y; `
-`std::cout << typeid(a).name() << std::endl;`
-`auto b = x && y;                      `
-`std::cout << typeid(b).name() << std::endl;  `
+`bool x = true, y = false;
+auto a = x & y; 
+std::cout << typeid(a).name() << std::endl;
+auto b = x && y;                      
+std::cout << typeid(b).name() << std::endl;`
 
 выполнив программу получим:
 
@@ -162,10 +162,10 @@
 
 Рассмотрите следующий фрагмент программы.
 
-`int a = -1, b = 1;`
-`unsigned int c = 1;`
-`std::cout << a * b << std::endl;`
-`std::cout << a * c << std::endl;`
+`int a = -1, b = 1;
+unsigned int c = 1;
+std::cout << a * b << std::endl;
+std::cout << a * c << std::endl;`
 
 
 Объясните работу этой программы, используя правила неявного преобразования типов
@@ -199,14 +199,14 @@
 
 Рассмотрим фрагмент программы:
 
-`int x = 7, y = 4;                      `
-`long double d = 0.25;                  `
-`cout << (x / y) / d << endl;           `
-`cout << (x / d) / y << endl;           `
-`long a = 200000, b = 200000;           `
-`long long c = 200000;                  `
-`std::cout << (a * b) * c << std::endl; `
-`std::cout << a * (b * c) << std::endl; `
+`int x = 7, y = 4;                      
+long double d = 0.25;                  
+cout << (x / y) / d << endl;           
+cout << (x / d) / y << endl;           
+long a = 200000, b = 200000;           
+long long c = 200000;                  
+std::cout << (a * b) * c << std::endl; 
+std::cout << a * (b * c) << std::endl; `
 
 ![результат программы](07.png)
 
